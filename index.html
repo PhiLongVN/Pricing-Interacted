@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ======================================================================= -->
+      <!--                                  TITLE                                  -->
+      <!-- ======================================================================= -->
+      <div class="title">
+        <h1>Simple, traffic-based pricing</h1>
+        <span> Sign-up for our 30-day trial. No credit card required.</span>
+      </div>
+
+      <!-- ======================================================================= -->
+      <!--                               BOX                               -->
+      <!-- ======================================================================= -->
+
+      <!-- -------------------------------- above -------------------------------- -->
+
+      <div class="box">
+        <!-- -------------------------------- above -------------------------------- -->
+        <div class="box-interacted">
+          <!-- title -->
+          <div class="box-inter-title">
+            <h2>100K Pageviews</h2>
+            <h2><strong> $ </strong> /month</h2>
+            <input type="range" />
+          </div>
+        
+          <!-- choose -->
+          <div class="box-inter-choose">
+            <span> Monthly Billing</span>
+            <div class="toogle"></div>
+            <span> Yearly Billing</span>
+            <strong>25% discount</strong>
+          </div>
+        </div>
+        <!-- -------------------------------- below -------------------------------- -->
+        <div class="box-trial">
+          <div class="box-trial-check">
+            <span
+              ><img src="images/icon-check.svg" alt="" /> Unlimited websites
+            </span>
+            <span
+              ><img src="images/icon-check.svg" alt="" /> 100% data ownership
+            </span>
+            <span><img src="images/icon-check.svg" alt="" />Email reports</span>
+          </div>
+
+          <button type="submit">Start my trial</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="./script/edit.js"></script>
+  </body>
+</html>

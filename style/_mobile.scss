@@ -1,0 +1,42 @@
+@media screen and (max-width: 624px) {
+  body {
+    background: red;
+  }
+  /* ========================================================================== */
+  /*                                    TITLE                                   */
+  /* ========================================================================== */
+  .title {
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    span {
+      width: max-content;
+      text-align: right;
+      color: white;
+    }
+  }
+}
+.box-interacted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ========================================================================== */
+/*                                    TRISL                                   */
+/* ========================================================================== */
+.box-trial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .box-trial-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
