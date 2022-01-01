@@ -32,31 +32,45 @@
       <!-- ======================================================================= -->
       <div class="title">
         <h1>Simple, traffic-based pricing</h1>
-        <span> Sign-up for our 30-day trial. No credit card required.</span>
+        <span>
+          Sign-up for our 30-day trial.
+          <span>No credit card required.</span></span
+        >
       </div>
 
       <!-- ======================================================================= -->
       <!--                               BOX                               -->
       <!-- ======================================================================= -->
 
-      <!-- -------------------------------- above -------------------------------- -->
-
       <div class="box">
         <!-- -------------------------------- above -------------------------------- -->
         <div class="box-interacted">
           <!-- title -->
           <div class="box-inter-title">
-            <h2>100K Pageviews</h2>
-            <h2><strong> $ </strong> /month</h2>
-            <input type="range" />
+            <h2 class="page-view">100K Pageviews</h2>
+            <h2><strong class="money"> $16 </strong> /month</h2>
+            <input
+              type="range"
+              class="range"
+              min="1"
+              max="5"
+              value="3"
+              step="1"
+            />
           </div>
-        
+
           <!-- choose -->
           <div class="box-inter-choose">
             <span> Monthly Billing</span>
-            <div class="toogle"></div>
+            <div class="toogle">
+              <input id="check" type="checkbox" />
+              <label class="box-check" for="check">
+                <div class="ball"></div>
+              </label>
+            </div>
             <span> Yearly Billing</span>
             <strong>25% discount</strong>
+            <strong>25%</strong>
           </div>
         </div>
         <!-- -------------------------------- below -------------------------------- -->

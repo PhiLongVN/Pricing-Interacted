@@ -1,6 +1,10 @@
 @media screen and (max-width: 624px) {
-  body {
-    background: red;
+  .container {
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
   }
   /* ========================================================================== */
   /*                                    TITLE                                   */
@@ -11,32 +15,84 @@
     }
 
     span {
-      width: max-content;
-      text-align: right;
-      color: white;
+      width: 100%;
+      text-align: center;
+      color: #9fa6b7;
+
+      span:nth-of-type(1) {
+        text-align: center;
+        display: block;
+      }
     }
   }
-}
-.box-interacted {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-/* ========================================================================== */
-/*                                    TRISL                                   */
-/* ========================================================================== */
-.box-trial {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  .box-trial-check {
+  /* ========================================================================== */
+  /*                                 INTERACTED                                 */
+  /* ========================================================================== */
+  .box-interacted {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 1rem;
+
+    .box-inter-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h2:nth-of-type(1) {
+        width: 100%;
+        order: 1;
+        text-align: center;
+      }
+
+      h2:nth-of-type(2) {
+        width: 100%;
+        order: 3;
+        text-align: center;
+      }
+
+      .range {
+        order: 2;
+      }
+    }
+
+    .box-inter-choose {
+      justify-content: center;
+
+
+      strong {
+        &:nth-of-type(1) {
+          display: none;
+        }
+
+        &:nth-of-type(2) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  /* ========================================================================== */
+  /*                                    TRIAL                                   */
+  /* ========================================================================== */
+  .box-trial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .box-trial-check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      span{
+        width: 100%;
+        
+      }
+    }
   }
 }
